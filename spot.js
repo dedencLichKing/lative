@@ -6,8 +6,8 @@
     var engine = new Shape.Engine(canvas);
     var promise = new Promise((resolve) => { resolve(); });
     
-    document.getElementById('go').addEventListener('click', start);
-    
+    //document.getElementById('go').addEventListener('click', start);
+    start();
     function start() {
         document.getElementById('go').removeEventListener('click', start);
         promise.then(() => engine.toText('L'))
